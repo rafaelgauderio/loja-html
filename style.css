@@ -1,268 +1,291 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-body, html {
 
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	font-family: arial;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: arial;
 }
 
 #grid-display {
-			
-
-            display: grid;
-            grid-template-columns: 200px auto;
-            grid-template-rows: 80px auto auto auto 50px;            
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-           
-            
+    display: grid;
+    grid-template-columns: 220px auto 200px;
+    grid-template-rows: 80px auto auto auto 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#header,#footer,#empresa, #contato {
-
-	
-	grid-column-start:1;
-	grid-column-end:3;	
-	box-sizing: border-box;
-
-
+#header,#footer,#empresa,#contato {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    box-sizing: border-box;
 }
 
 #header {
-
-	
-	height: 80px;
-	color:white;
-	font-size:15px;
-	text-align:center;	
-	list-style:none;
+    height: 80px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
 }
 
 #footer {
-	background-color: black;
-	color:white;
+    background-color: black;
+    color: white;
 }
 
-
 #menu {
-	text-align: center;
-	background-color:#5CA47A;
-	padding: 12px;	
-	font-family: Carter one, arial;
+    text-align: center;
+    background-color: #5CA47A;
+    padding: 12px;
+    font-family: Carter one, arial;
+}
 
-
-
+.texto-menu {
+    font-family: arial;
+    font-size: 15px;
+    margin: 10px;
+    padding: 5PX;
+    text-align: left;
+    text-indent: 1em;
 }
 
 #content {
-	background-color: white;
-	color: black;	
-	
-} 
-
-#content h3 {
-	color:black;	
-	text-align: left; 
-	margin: 5px;
-	font-family: Carter one, arial;
-	margin-left:15px;  
-
+    background-color: silver;
+    color: black;
 }
 
- .externo-itens-content {
-            
-            display: grid;
-            grid-template-columns: 240px 240px 240px;            
-            column-gap: 20px;
-            justify-content: start;
-            align-content: space-evenly;
-            justify-items:center;
-            align-items: center; 
+#content h3 {
+    color: black;
+    text-align: center;
+    margin: 5px;
+    font-family: Carter one, arial;
+    margin-left: 15px;
+}
 
-           
+.externo-itens-content {
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
 
+.itens-content {
+    border: 1.5px solid #5CA47A;
+    height: 200px;
+    width: 220px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+}
 
-        }
-
-
-
- .itens-content {
-            border: 1.5px solid #5CA47A;
-            height: 200px;
-            width: 220px;
-            background-color: #DDDDDD;
-            border-radius: 10px;
-            margin-left: 20px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            padding: 5px;
-            text-align: center;
-            
- }
-
- .itens-content button {
-	text-align: center;
-	background-color: red;
-	font-family: arial;
-	border: 0;  
-  width: 80px;
-  height: 30px;  
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: bold;
-  color: white;
-  font-size: 13px;
+.itens-content button {
+    text-align: center;
+    background-color: red;
+    font-family: arial;
+    border: 0;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
 }
 
 .itens-content img {
-	width:120px;
-	height: 50px;
-	margin: 5px;
+    width: 160px;
+    height: 50px;
+    margin: 5px;
 }
 
-
-
- .itens-content:hover {
-    -webkit-transform:scale(1.1); /* Safari and Chrome */
-    -moz-transform:scale(1.1); /* Firefox */
-    -ms-transform:scale(1.1); /* IE 9 */
-    -o-transform:scale(1.1); /* Opera */
-     transform:scale(1.1);
-     background: linear-gradient(orange, white);
+.itens-content:hover {
+    -webkit-transform: scale(1.15);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.15);
+    /* Firefox */
+    -ms-transform: scale(1.15);
+    /* IE 9 */
+    -o-transform: scale(1.15);
+    /* Opera */
+    transform: scale(1.15);
+    background: linear-gradient(orange, white);
 }
 
- 
- .descricao-item {
- 	font-size: 13px;
- 	color:black;
- 	text-align: center;
- 	padding: 5px
- }
+.descricao-item {
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    padding: 5px
+}
 
- .nome-item  {
- 	font-size: 15px;
- 	font-weight: bolder;
- 	color:black;
- 	text-align: center;
- 	padding: 10px;
- }
+.nome-item {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
 
- .preco-item {
- 	font-size:15px;
- 	font-weight: bolder;
- }
-
-
-
+.preco-item {
+    font-size: 15px;
+    font-weight: bolder;
+}
 
 #header1 {
-	width: 100%;
-	height: 30px;	
-	color: white;
-	box-sizing: border-box;
-	padding-right: 20px;
-	text-align: right;
-	line-height: 30px;
-	background-color: black;
-
+    width: 100%;
+    height: 30px;
+    color: white;
+    box-sizing: border-box;
+    padding-right: 20px;
+    text-align: right;
+    line-height: 30px;
+    background-color: black;
 }
 
-#top-menu {
-	width: 100%;
-	height: 50px;
-	background-color:#25335D;
-	color:white;
-	font-size:12px;
-	text-align:center;	
-	box-sizing: border-box;
-	font-weight: bold;
-	margin: 0;	
+
+.top-menu {
+    width: 100%;
+    height: 50px;
+    background-color: #25335D;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    margin: 0;
 }
 
-#top-menu {
-	float:left;
+.top-menu img {
+	width:20px;
 }
 
-#top-menu ul,
-#top-menu li{
 
-	margin:0;
-	padding-left:50px;
-	list-style:none;
-	cursor:pointer;
-	color:white;
-	   
+ul.top-menu {
+    position: relative;
 }
 
-#top-menu li{
-	padding-left:30px;
-	padding-right:30px;
-	line-height:50px;
-	font-size:18px; 
-	float:left;
-	transition:all 0.6s linear;
+ul.top-menu ul {
+    display: none;
 }
 
-#top-menu li:hover {
-	background-color:#5CA47A;
-	text-decoration:none;
-	text-transform: uppercase;
-	font-family: arial black;
-	color: white;
+ul.top-menu li:hover>ul {
+    display: block;
+    cursor: pointer;
+}
+
+.top-menu {
+    float: left;
+}
+
+ul.top-menu,
+ul.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.top-menu ul,
+.top-menu li {
+    margin: 0;
+    padding-left: 30px;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+}
+
+ul.top-menu>li {
+    float: left;
+}
+
+ul.top-menu li {
+    width: 120px;
+    height: 50px;
+    background-color: #25335D;
+}
+
+.top-menu li {
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 14px;
+    float: left;
+    transition: all 0.6s linear;
+    width: 120px;
+    height: 50px;
+}
+
+ul.top-menu li {
+    background-color: #25335D;
+    width: 120px;
+    height: 50px;
+}
+
+ul.top-menu ul ul {
+    margin-left: 100%;
+    margin-top: -50px;
+}
+
+ul.top-menu li:hover {
+    background-color: #5CA47A;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: arial black;
+    color: white;
+}
+
+ul.top-menu>li>ul>li {
+    position: relative;
+    background-color: black;
+    margin-left: -60px;
 }
 
 .header-text {
-	display: inline;
-	padding-left: 20px;
-	padding-right: 20px;	
-	font-family: arial black;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: arial black;
 }
 
 #empresa {
-
-	background-color: blue;
-	padding: 15px;
-	column-count: 3;
+    background-color: blue;
+    padding: 15px;
+    column-count: 3;
     column-gap: 40px;
     text-indent: 4em;
     text-align: justify;
     padding: 10px;
     font-size: 20px;
-    
 }
 
 #contato {
-	background-color: red;
-	padding: 10px;
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
 }
 
+#aside {
+    background-color: #5CA47A;
+}
 
 @media (orientation: portrait) {
-
-	 .externo-itens-content {
-
-		 grid-column-start: 1;
-         grid-column-end: 3;
-         display: grid;
-         grid-template-columns: 200px;         
-         column-gap: 10px;
-         justify-content: space-around;
-         align-content: space-evenly;            
-
-           
-
-
-        }
-
-
+    .externo-itens-content {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-columns: 200px;
+        column-gap: 10px;
+        justify-content: space-around;
+        align-content: space-evenly;
+    }
 }
-
-
-
- 
-

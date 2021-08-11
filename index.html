@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 
+<html lang="pt">
+
 <head>
 
     <title>Loja Virtual deluca tecnologia</title>
-    <meta name="viewport" content="" widht=device-widht, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -17,74 +19,119 @@
                 <div class="header-text">(51)33332222</div>
             </div>
 
-            <div id="top-menu">
-                <ul>
+            <div class="top-menu">
+                <ul class="top-menu">
                     <li>Home</li>
                     <li>Empresa</li>
                     <li>Loja Virtual</li>
-                    <li>Lista de Desejos</li>
+                    <li>Produtos
+                        <ul>
+                            <li>Infraestrutura
+                                <ul>
+                                    <li>Win-Desktop</li>
+                                    <li>Win-Server</li>
+                                    <li>Linux-Server</li>
+                                </ul>
+                            </li>
+                            <li>Desenvolvimento
+                                <ul>
+                                    <li>Java | C++</li>
+                                    <li>JavaScript</li>
+                                    <li>CSS | HTML</li>
+                                </ul>
+                            </li>
+                            <li>Database
+                                <ul>
+                                    <li>MYSQL</li>
+                                    <li>Microsoft SQL</li>
+                                    <li>ORACLE</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li>Contato</li>
-                    <li><img src="imagem/carrinho.png" width=20px; alt="carinho"> Carrinho</li>
-                    <li><img src="imagem/icone.png" width=20px; alt="Icone login"> Login</li>
+                    <li><img src="imagem/carrinho.png" alt="carinho"> Carrinho</li>
+                    <li><img src="imagem/icone.png" alt="Icone login"> Login</li>
                 </ul>
             </div>
         </div>
 
 
-        <div id="menu">PROMOÇÕES com até 50% off</div>
+        <div id="menu">PRODUTOS EM DESTAQUE !!
+            <div class="texto-menu">Todos os nossos valores são cobrados por
+                <h4 style="display:inline; font-weight:bold">hora de programacao. </h4>Não estão inclusos os valores de deslocamento, se for necessário atendimento presencial.
+            </div>
+            <img src=imagem/codificacao.jpg alt="dev-codigo" style="width:150px">
+            <img src=imagem/codificacao2.jpg alt="dev-codigo2" style="width:150px">
+        </div>
+
         <div id="content">
             <h3>Contrate serviços e compre produtos de informática online!</h3>
 
             <div class="externo-itens-content">
                 <div class="itens-content">
                     <div class="nome-item">Windows Destop</div>
-                    <img src=imagem/windows.png>
-                    <div class="preco-item">R$ 150,00</div>
-                    <div class="descricao-item">Serviço de instalação e manutenção em SO windows.</div>
-                        <button type="button">Comprar</button>
-                       
+                    <img src=imagem/windows.png alt="windows-desktop">
+                    <div class="preco-item">R$150,00</div>
+                    <div class="descricao-item ">Serviço de instalação e manutenção em SO windows.</div>
+                    <button type="button">Comprar</button>
+
                 </div>
                 <div class="itens-content">
                     <div class="nome-item">Windows Server</div>
-                    <img src=imagem/windows-server.png>
-                    <div class="preco-item">R$ 250,00</div>
+                    <img src=imagem/windows-server.png alt="windows-server">
+                    <div class="preco-item">R$250,00</div>
                     <div class="descricao-item">Serviço de instalação e manutenção em windows Server.</div>
-                        <button type="button">Comprar</button>
+                    <button type="button">Comprar</button>
                 </div>
                 <div class="itens-content">
                     <div class="nome-item">Linux Server</div>
-                    <div class="descricao-item">Descrição do item que possui muitos detalhes.descrição do item que
-                        possui muitos detalhes.</div>
+                    <img src=imagem/linux-server.png alt="linux-server">
+                    <div class="preco-item">R$250,00</div>
+                    <div class="descricao-item">Serviço de instalação e manutenção em Linux Server. </div>
+                    <button type="button">Comprar</button>
                 </div>
                 <div class="itens-content">
-                    <div class="nome-item">Desenvolvimento Java</div>
-                    <div class="descricao-item">Descrição do item que possui muitos detalhes.descrição do item que
-                        possui muitos detalhes.</div>
+                    <div class="nome-item">Java, C++</div>
+                    <img src=imagem/java.png alt="java">
+                    <div class="preco-item">R$350,00</div>
+                    <div class="descricao-item">Desenvolvimento em Java, C++ ou C#.</div>
+                    <button type="button">Comprar</button>
                 </div>
                 <div class="itens-content">
-                    <div class="nome-item">Desenvolvimento JavaScript, PHP</div>
-                    <div class="descricao-item">Descrição do item que possui muitos detalhes.descrição do item que
-                        possui muitos detalhes.</div>
+                    <div class="nome-item">JavaScript, PHP</div>
+                    <img src=imagem/php.png alt="javascript">
+                    <div class="preco-item">R$300,00</div>
+                    <div class="descricao-item">Desenvolvimento Back-end em JavaScript e PHP.</div>
+                    <button type="button">Comprar</button>
                 </div>
                 <div class="itens-content">
-                    <div class="nome-item">Desenvolvimento CSS, HTML</div>
-                    <div class="descricao-item">Descrição do item que possui muitos detalhes.descrição do item que
-                        possui muitos detalhes.</div>
+                    <div class="nome-item">CSS, HTML</div>
+                    <img src=imagem/css.png alt="css">
+                    <div class="preco-item">R$ 250,00</div>
+                    <div class="descricao-item">Desenvolvimento front-end com CSS e HTML.</div>
+                    <button type="button">Comprar</button>
                 </div>
                 <div class="itens-content">
-                    <div class="nome-item">Banco de Dados MYSQL</div>
-                    <div class="descricao-item">Descrição do item que possui muitos detalhes.descrição do item que
-                        possui muitos detalhes.</div>
+                    <div class="nome-item">MYSQL</div>
+                    <img src=imagem/mysql.png alt="mysql">
+                    <div class="preco-item">R$ 250,00</div>
+                    <div class="descricao-item">Instalação e manutenção em Banco de dados MYSQL.</div>
+                    <button type="button">Comprar</button>
                 </div>
                 <div class="itens-content">
-                    <div class="nome-item">Banco de Daados Microsoft SQL</div>
-                    <div class="descricao-item">Descrição do item que possui muitos detalhes.descrição do item que
-                        possui muitos detalhes.</div>
+                    <div class="nome-item">Microsoft SQL</div>
+                    <img src=imagem/microsoftsql.png alt="microsfot-sql">
+                    <div class="preco-item">R$ 300,00</div>
+                    <div class="descricao-item">Instalação e manutenção em Banco de dados Microsoft SQL</div>
+                    <button type="button">Comprar</button>
                 </div>
                 <div class="itens-content">
-                    <div class="nome-item">Banco de Dados Oracle</div>
-                    <div class="descricao-item">Descrição do item que possui muitos detalhes.descrição do item que
-                        possui muitos detalhes.</div>
+                    <div class="nome-item">Oracle</div>
+                    <img src=imagem/oracle.png alt="oracle">
+                    <div class="preco-item">R$ 350,00</div>
+                    <div class="descricao-item">Instalação e manutenção em Banco de dados ORACLE</div>
+                    <button type="button">Comprar</button>
                 </div>
             </div>
 
@@ -92,21 +139,17 @@
 
         </div>
 
+        <div id="aside">texto ao lado</div>
 
-        <div id="empresa">h2Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sit dolorum in temporibus
-            distinctio minus laudantium voluptate voluptatibus magnam earum nam! Ipsa expedita commodi dolore, non
-            facilis placeat tempore distinctio tempora, doloremque ut assumenda beatae nemo laudantium. Quam voluptates
-            autem, accusamus culpa necessitatibus, modi velit reprehenderit iste, in ipsa voluptatum? Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Commodi iusto quam deserunt ipsa suscipit, expedita, molestiae neque
-            consequuntur doloribus iure sunt, quae maiores. Eaque adipisci perspiciatis debitis quas iste voluptate.
+
+        <div id="empresa">h2Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sit dolorum in temporibus distinctio minus laudantium voluptate voluptatibus magnam earum nam! Ipsa expedita commodi dolore, non facilis placeat tempore distinctio tempora, doloremque
+            ut assumenda beatae nemo laudantium. Quam voluptates autem, accusamus culpa necessitatibus, modi velit reprehenderit iste, in ipsa voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi iusto quam deserunt ipsa suscipit,
+            expedita, molestiae neque consequuntur doloribus iure sunt, quae maiores. Eaque adipisci perspiciatis debitis quas iste voluptate.
         </div>
 
         <div id="contato">
-            <h2>Contato</h2>Lorem ipsum dolor sit ame consectetur, adipisicing elit. Id dolor quibusdam architecto animi
-            molestias quis adipisci aliquam deleniti, earum ducimus obcaecati nihil vero ratione dolorem ipsam cumque!
-            Iure fugiat, veniam vero accusantium delectus, iusto id at quis possimus tempore voluptatem aperiam dolor
-            cumque sint fuga, nobis reiciendis eos minus molestias commodi maiores vel accusamus. Ipsam quia officiis
-            saepe unde fugiat.
+            <h2>Contato</h2>Lorem ipsum dolor sit ame consectetur, adipisicing elit. Id dolor quibusdam architecto animi molestias quis adipisci aliquam deleniti, earum ducimus obcaecati nihil vero ratione dolorem ipsam cumque! Iure fugiat, veniam vero accusantium
+            delectus, iusto id at quis possimus tempore voluptatem aperiam dolor cumque sint fuga, nobis reiciendis eos minus molestias commodi maiores vel accusamus. Ipsam quia officiis saepe unde fugiat.
         </div>
 
 
