@@ -50,19 +50,20 @@
                         </ul>
                     </li>
                     <li>Contato</li>
-                    <li><img src="imagem/carrinho.png" alt="carinho"> Carrinho</li>
+                    <li>
+                        <label for="alternar"><img src="imagem/carrinho.png" alt="carrinho">
+                            Carrinho
+                        </label>
+                    </li>
+
                     <li><img src="imagem/icone.png" alt="Icone login"> Login</li>
                 </ul>
             </div>
         </div>
 
 
-        <div id="menu">PRODUTOS EM DESTAQUE !!
-            <div class="texto-menu">Todos os nossos valores são cobrados por
-                <h4 style="display:inline; font-weight:bold">hora de programacao. </h4>Não estão inclusos os valores de deslocamento, se for necessário atendimento presencial.
-            </div>
-            <img src=imagem/codificacao.jpg alt="dev-codigo" style="width:150px">
-            <img src=imagem/codificacao2.jpg alt="dev-codigo2" style="width:150px">
+        <div id="menu">Produtos por Categoria
+
         </div>
 
         <div id="content">
@@ -139,7 +140,42 @@
 
         </div>
 
-        <div id="aside">texto ao lado</div>
+        <div id="aside">
+
+            <div id="grid-itens-destaque">
+                <h3 style="text-align:center" ;>Produtos em Destaque</h3>
+
+                <div class="itens-destaque">
+                    <div class="nome-item">Desenvolvimento em JavasScript</div>
+                    <div class="preco-item">R$300,00</div>
+                    <button type="button">Ver mais</button>
+
+                </div>
+
+                <div class="itens-destaque">
+                    <div class="nome-item">Bando de Dados Oracle</div>
+                    <div class="preco-item">R$350,00</div>
+                    <button type="button">Ver mais</button>
+                </div>
+
+                <h5 style="text-align: center;">Código com qualidade e agilidade.</h5>
+
+
+                <img src=imagem/codificacao2.jpg alt="dev-codigo2" style="width:160px;">
+            </div>
+
+
+
+
+            <div id="grid-carrinho">
+                <input type="checkbox" id="alternar">
+                <div id="carrinho"><button type="button"><label for="alternar">Fechar Carrinho</button>
+                    </label>
+                    <p>Itens adicionado ao carrinho</p>
+                </div>
+            </div>
+
+        </div>
 
 
         <div id="empresa">h2Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sit dolorum in temporibus distinctio minus laudantium voluptate voluptatibus magnam earum nam! Ipsa expedita commodi dolore, non facilis placeat tempore distinctio tempora, doloremque

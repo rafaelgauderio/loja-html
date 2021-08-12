@@ -111,6 +111,8 @@ html {
     margin: 5px;
 }
 
+
+
 .itens-content:hover {
     -webkit-transform: scale(1.15);
     /* Safari and Chrome */
@@ -143,6 +145,8 @@ html {
     font-size: 15px;
     font-weight: bolder;
 }
+
+
 
 #header1 {
     width: 100%;
@@ -199,14 +203,13 @@ ul.menu ul {
 .top-menu ul,
 .top-menu li {
     margin: 0;
-    padding-left: 30px;
+    padding-left: 20px;
     list-style: none;
     cursor: pointer;
     color: white;
 }
 
-ul.top-menu>li {
-    float: left;
+ul.top-menu>li {    float: left;
 }
 
 ul.top-menu li {
@@ -216,7 +219,7 @@ ul.top-menu li {
 }
 
 .top-menu li {
-    padding-right: 30px;
+    padding-right: 20px;
     line-height: 50px;
     font-size: 14px;
     float: left;
@@ -247,7 +250,7 @@ ul.top-menu li:hover {
 ul.top-menu>li>ul>li {
     position: relative;
     background-color: black;
-    margin-left: -60px;
+    margin-left: -40px;
 }
 
 .header-text {
@@ -276,7 +279,108 @@ ul.top-menu>li>ul>li {
 
 #aside {
     background-color: #5CA47A;
+    position:relative;  
+
+       
 }
+
+#grid-itens-destaque {
+	display: grid;
+	justify-items:center;
+	align-items: center;
+}
+
+
+.itens-destaque {
+    border: 2px solid #25335D;
+    height: 130px;
+    width: 150px;
+    background-color: white;    
+    margin-top: 10px;        
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.itens-destaque button {
+    text-align: center;
+    background-color: green;    
+    border: 0;
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    margin: 10px;
+}
+
+
+
+#grid-carrinho {
+	display: grid;
+	justify-content:center;
+	align-content: center;
+
+
+}
+
+#carrinho {
+
+	position:absolute;
+	right:0;
+	top:0;
+	width:350px;
+	height:500px;
+	background-color:white;	
+	display: none;	
+	z-index: +1;
+	color:black;
+	font-weight: normal;
+	border: 2px solid  #5CA47A;
+	text-align:center; 
+
+}
+
+
+
+ #carrinho button {
+ 	margin: 10px;
+	text-align: center;
+	background-color: green;	
+	border: 0; 
+	font-weight: bolder; 
+  width: 160px;
+  height: 40px;  
+  cursor: pointer;
+  border-radius: 4px;  
+  color: white;
+  font-size: 15px;
+  vertical-align: center;
+}
+
+
+
+#alternar {
+   display:none;
+}
+
+
+label { 
+  -webkit-appearance: push-button;
+  -moz-appearance: button;  
+  cursor: pointer;  
+  
+
+}
+
+#alternar:checked ~ #carrinho {
+   display:block;
+}
+
+
+
 
 @media (orientation: portrait) {
     .externo-itens-content {
