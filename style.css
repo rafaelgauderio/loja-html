@@ -253,6 +253,11 @@ ul.top-menu>li>ul>li {
     margin-left: -40px;
 }
 
+#categorias-menu{
+	font-size: 12px;
+	text-align: left;
+}
+
 .header-text {
     display: inline;
     padding-left: 20px;
