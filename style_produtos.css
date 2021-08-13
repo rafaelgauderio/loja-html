@@ -59,41 +59,18 @@ html {
     background-color: silver;
     color: black;
     font-family: Carter one, arial;
-    padding:40px;
+    
+   
 
 }
 
 #content h3, #content h2 {
     color: black;
-    text-align: left;    
-    display: inline;
+    text-align: center;    
     font-size: 25px;
-
     
-       
+}
   
-
-}
-#content table{
-
-    padding: 2px;    
-    text-align: center;
-}
-
-#content th {
-
- font-size: 18px;
- font-family: Carter one, arial;
- text-align: center; vertical-align: middle 
-}
-
- #content tbody {
-    padding: 15px;
-    font-family: Carter one, arial;
-    font-size: 15px;    
-    
-}
-    
 
 .externo-itens-content {
     display: grid;
