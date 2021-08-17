@@ -36,7 +36,13 @@ html {
 
 #footer {
     background-color: black;
-    color: white;
+    width: 100%;
+    height: 50px;
+    color: white;     
+    font-size: 15px;
+    text-align: center;
+    padding-top:10px;      
+
 }
 
 #menu {
@@ -45,6 +51,18 @@ html {
     padding: 12px;
     font-family: Carter one, arial;
 }
+
+a {
+     color: white;
+    text-decoration: none;
+}
+
+
+#menu a:hover {
+
+    color: orange;
+
+}  
 
 .texto-menu {
     font-family: arial;
@@ -316,18 +334,173 @@ ul.top-menu>li>ul>li {
     position:relative;       
 }
 
+.menu-mobile {
+
+    width:100%;
+    height:40px;
+    display:none;
+    background-color: #25335D;
+}    
+
 
 
 
 
 @media (orientation: portrait) {
-    .externo-itens-content {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        display: grid;
-        grid-template-columns: 200px;
-        column-gap: 10px;
-        justify-content: space-around;
+     #grid-display {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px auto auto 50px;
+   
+}
+
+
+
+.menu-mobile {
+    
+    display: flex;
+    margin: 0;
+    color: white;
+    text-align: center;
+    line-height: 40px;  
+
+}
+
+.texto-menu-mobile {
+    
+    padding-right: 140px;
+    font-family: Carter one, arial;
+    
+
+}
+
+   #header,#footer,#content, #menu, #aside,#empresa,#contato {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    box-sizing: border-box;
+}
+
+
+    .externo-itens-content {      
+       
+        display: grid;        
+        grid-template-columns: 250px;
+        justify-content: space-evenly;
         align-content: space-evenly;
     }
+
+    #menu,#aside, #empresa, #header {
+        display: none;
+    }
+
+
+
+   
+
+ul.menu-mobile {
+    
+            position:relative;
+            font-size: 11px;            
+            color: white;
+            text-align: center;
+            font-weight: bold;
+
+            
+        }
+
+
+        ul.menu-mobile ul {
+            
+            display: none;             
+            
+
+            
+            
+        }
+
+        ul.menu-mobile li:hover > ul {
+            display: block;
+            cursor:pointer;               
+                   
+
+        }
+
+        ul.menu-mobile li:hover, ul.menu-mobile a:hover {
+            
+           background-color: #5CA47A;
+           display: block;
+        }
+         
+        ul.menu-mobile, ul.menu-mobile ul {
+            list-style-type: none;
+                      
+        }
+
+        
+        ul.menu-mobile li {
+
+            background-color:#25335D;            
+            width:80px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        ul.menu-mobile > li > ul {
+
+            transform: translateX(-80px);                 
+
+        } 
+
+        
+        ul.menu-mobile > li > ul > li {
+
+           position: relative;
+           background-color: black;
+           padding-left: 5px;
+
+
+        }     
+
+        
+    
+       
+        ul.menu-mobile li li {
+            
+            margin-left: 100%;
+            margin-top:-1px; 
+                    
+           
+        }
+
+        ul.menu-mobile ul ul {
+            
+            margin-top:-40px;            
+                     
+            
+
+        }
+
+        ul.menu-mobile ul ul > li{  
+
+            position: relative;            
+            z-index: +2;
+            padding-left: 5px;                 
+            
+
+        } 
+
+        #contato h2 {
+    font-size: 26px; 
+
+      }
+
+    #contato img {
+        display: none;
+    }
+
+    #footer {
+            text-align: center;
+            font-size: 15px;
+    }
+
 }
