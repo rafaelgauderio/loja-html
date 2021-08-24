@@ -45,22 +45,37 @@ html {
 
 }
 
+
 #menu {
     text-align: center;
-    background-color: silver;
+    background-color: #5CA47A;
     padding: 12px;
     font-family: Carter one, arial;
-}
-
-#menu a:hover {
-
-    color: orange;    
-}  
+    
+} 
 
 a {
-     color: white;
+    color: white;
     text-decoration: none;
-}  
+}
+
+
+#menu li:hover, #menu a:hover {
+
+    color: orange;
+
+}
+
+#menu li> ul > li {
+    border: 1px solid black;
+    margin-top:-2px;
+    margin-left:-2px;
+    background-color: #25335D;
+    text-align: center;
+    font-size: 15px;
+    transform: translateX(-40px);
+    
+} 
 
 
 
@@ -94,7 +109,8 @@ a {
 }
 
 #content caption {
-    text-align: left
+    text-align: left;
+
 }
 
 
@@ -380,6 +396,10 @@ ul.top-menu>li>ul>li {
 
 @media (orientation: portrait) {
 
+    * {
+        margin:0;
+    }
+
     #grid-display {
     display: grid;
     grid-template-columns: 100%;
@@ -406,9 +426,21 @@ ul.top-menu>li>ul>li {
 
 }
 
+   #menu, #empresa, #header, #aside {
+        display: none;
+    }
+
+    #content {
+        margin: 0;
+        padding-left:10px;
+        padding-top: 10px;
+    }
+
+
+
    #header,#footer,#content, #menu, #aside {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     box-sizing: border-box;
 }
 
@@ -421,11 +453,7 @@ ul.top-menu>li>ul>li {
         align-content: space-evenly;
     }
 
-    #menu,#aside, #empresa, #header {
-        display: none;
-    }
-
-
+ 
 
    
 
@@ -521,10 +549,69 @@ ul.menu-mobile {
 
         } 
 
+        #content h3, #content h2 {
+    color: black;
+    text-align: left;    
+    display: inline;
+    font-size: 15px;
+    
+       
+  
+
+}
+
+#content caption {
+    text-align: left;
+    font-size: 15px;
+
+}
+
+
+#content table{
+    border:1;
+    width: 350px;
+    padding: 1px;    
+    text-align: center;
+}
+
+#content th {
+
+ font-size: 12px;
+ font-family: Carter one, arial;
+ text-align: center;
+ vertical-align: middle 
+}
+
+ #content tbody {
+    
+    font-family: Arial, Helvetica;
+    font-size: 10px; 
+    font-weight: bold;   
+    
+}
+
+#content table button{
+    width: 20px;
+    text-align: center;
+    
+}
+
+#content button {
+    width:150px;
+    font-size: 15px;
+}
+
+
+
+
+
+
        
     #footer {
             font-size: 13px;
             padding-top:10px;
+            height: auto;
+
     }
 
 

@@ -20,7 +20,7 @@ html {
     box-sizing: border-box;
 }
 
-#header,#footer,#empresa,#contato {
+#header,#footer {
     grid-column-start: 1;
     grid-column-end: 4;
     box-sizing: border-box;
@@ -45,18 +45,19 @@ html {
 
 }
 
+
 #menu {
     text-align: center;
-    background-color: silver;
+    background-color: #5CA47A;
     padding: 12px;
     font-family: Carter one, arial;
-}
+    
+} 
 
 a {
-     color: white;
+    color: white;
     text-decoration: none;
 }
-
 
 
 #menu li:hover, #menu a:hover {
@@ -64,7 +65,6 @@ a {
     color: orange;
 
 }
-
 
 #menu li> ul > li {
     border: 1px solid black;
@@ -79,11 +79,12 @@ a {
 
 
 
+
 .texto-menu {
     font-family: arial;
     font-size: 15px;
     margin: 10px;
-    padding: 5PX;
+    padding: 5px;
     text-align: left;
     text-indent: 1em;
 }
@@ -92,111 +93,62 @@ a {
     background-color: silver;
     color: black;
     font-family: Carter one, arial;
-    
-   
+    padding:30px;
+    margin: 0;
+    display: grid;
+    justify-items:center;
+    align-items:center;
 
 }
+
+
 
 #content h3, #content h2 {
-    color: black;
-    text-align: center;    
+    color: black;       
     font-size: 25px;
     
-}
   
 
-.externo-itens-content {
-    display: grid;
-    grid-template-columns: 220px 220px 220px;
-    column-gap: 20px;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    justify-items: center;
-    align-items: center;
 }
 
-.itens-content {
-    border: 1.5px solid #5CA47A;
-    height: 240px;
-    width: 240px;
-    background-color: white;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 5px;
-    text-align: center;
+#content a {
+    color:black;
+    font-size:15px;
 }
 
-.itens-content button {
-    text-align: center;
-    background-color: red;
-    font-family: arial;
-    border: 0;
-    width: 80px;
+#content input {
+    display: block;
+    
     height: 30px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-weight: bold;
-    color: white;
-    font-size: 13px;
-}
-
-.itens-content img {
-    width: 180px;
-    height: 60px;
-    margin: 10px;
-}
-
-
-
-.itens-content:hover {
-    -webkit-transform: scale(1.15);
-    /* Safari and Chrome */
-    -moz-transform: scale(1.15);
-    /* Firefox */
-    -ms-transform: scale(1.15);
-    /* IE 9 */
-    -o-transform: scale(1.15);
-    /* Opera */
-    transform: scale(1.15);
-    background: linear-gradient(green, white);
-}
-
-.descricao-item {
-    font-size: 13px;
-    color: black;
-    text-align: center;
-    padding: 5px
-}
-
-.nome-item {
-    font-size: 15px;
-    font-weight: bolder;
-    color: black;
-    text-align: center;
-    padding: 10px;
-}
-
-.preco-item {
-    font-size: 15px;
-    font-weight: bolder;
-}
-
- .botao-carrinho button {
-    margin-top: 20px;
-    text-align: center;
-    background-color: green;
+    width: 140px;
+    margin-top: 10px;
+    border-radius: 20px;
     border: 2px solid black;
-   font-weight: bolder; 
-  width: 300px;
-  height: 50px;  
-  cursor: pointer;
-  border-radius: 4px;  
-  color: white;
-  font-size: 18px;
-  vertical-align: center;
+    font-size: 14pt;
+    padding: 5px 5px;
+
 }
+
+#content input[type=submit] {
+
+    display: block;
+    color: green;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: bold;
+    cursor: pointer;        
+
+}
+
+#aside {
+    background-image: url("imagem/background.jpg");
+    background-size: cover;
+}
+
+
+
 
 
 
@@ -225,7 +177,7 @@ a {
 }
 
 .top-menu img {
-	width:20px;
+    width:20px;
 }
 
 
@@ -306,16 +258,16 @@ ul.top-menu>li>ul>li {
 }
 
 #categorias-menu{
-	font-size: 13px;
-	text-align: left;
+    font-size: 13px;
+    text-align: left;
 }
 
 #categorias-menu li > ul > li {
-	color: #25335D;
+    color: #25335D;
 }
 
 #categorias-menu ul, #categorias-menu li {
-	list-style: none;
+    list-style: none;
     cursor: pointer;
 }
 
@@ -346,7 +298,8 @@ ul.top-menu>li>ul>li {
 #aside {
 
     background-color: silver;
-    position:relative;       
+    position:relative;
+        
 }
 
 .menu-mobile {
@@ -354,21 +307,25 @@ ul.top-menu>li>ul>li {
     width:100%;
     height:40px;
     display:none;
-    background-color: #25335D;
-}    
+    background-color: #25335D;  
+}
 
 
 
 
 
 @media (orientation: portrait) {
-     #grid-display {
+
+    * {
+        margin:0;
+    }
+
+    #grid-display {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40px auto auto 50px;
+    grid-template-rows: 40px auto 50px;
    
 }
-
 
 
 .menu-mobile {
@@ -389,9 +346,21 @@ ul.top-menu>li>ul>li {
 
 }
 
-   #header,#footer,#content, #menu, #aside,#empresa,#contato {
+   #menu, #empresa, #header, #aside {
+        display: none;
+    }
+
+    #content {
+        margin: 0;
+        padding-left:10px;
+        padding-top: 10px;
+    }
+
+
+
+   #header,#footer,#content, #menu, #aside {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     box-sizing: border-box;
 }
 
@@ -404,11 +373,7 @@ ul.top-menu>li>ul>li {
         align-content: space-evenly;
     }
 
-    #menu,#aside, #empresa, #header {
-        display: none;
-    }
-
-
+ 
 
    
 
@@ -504,18 +469,70 @@ ul.menu-mobile {
 
         } 
 
-        #contato h2 {
-    font-size: 26px; 
+        #content h3, #content h2 {
+    color: black;
+    text-align: left;   
+    font-size: 20px;
+    
+       
+  
 
-      }
+}
 
-    #contato img {
-        display: none;
-    }
+#content caption {
+    text-align: left;
+    font-size: 15px;
 
+}
+
+
+#content table{
+    border:1;
+    width: 350px;
+    padding: 1px;    
+    text-align: center;
+}
+
+#content th {
+
+ font-size: 12px;
+ font-family: Carter one, arial;
+ text-align: center;
+ vertical-align: middle 
+}
+
+ #content tbody {
+    
+    font-family: Arial, Helvetica;
+    font-size: 10px; 
+    font-weight: bold;   
+    
+}
+
+#content table button{
+    width: 20px;
+    text-align: center;
+    
+}
+
+#content button {
+    width:150px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+       
     #footer {
-            text-align: center;
-            font-size: 15px;
+            font-size: 13px;
+            padding-top:10px;
+            height: auto;
+
     }
 
+
+  
 }
