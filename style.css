@@ -47,7 +47,7 @@ html {
 
 #menu {
     text-align: center;
-    background-color: #5CA47A;
+    background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D);   
     padding: 12px;
     font-family: Carter one, arial;
     
@@ -358,16 +358,14 @@ ul.top-menu>li>ul>li {
 	height: 250px;	
     top:20px;
     margin-left: 400px;
-    border: 2px solid black;
-
-    
+    border: 2px solid black;    
 
 }
 
 
 
 #aside {
-    background-color: #5CA47A;
+    background-image: linear-gradient(to bottom, #5CA47A 50%, #25335D);  
     position:relative;  
 
        
@@ -388,6 +386,7 @@ ul.top-menu>li>ul>li {
     margin-top: 10px;        
     padding: 5px;
     text-align: center;
+    border-radius: 10px;
     
 }
 
@@ -451,28 +450,9 @@ ul.top-menu>li>ul>li {
 
 
 
-#alternar {
-   display:none;
-}
-
-
-label { 
-  -webkit-appearance: push-button;
-  -moz-appearance: button;  
-  cursor: pointer;  
-  
-
-}
-
-#alternar:checked ~ #carrinho {
-   display:block;
-}
-
-
-
 .menu-mobile {
 
-    width:100%;
+    width:auto;
     height:40px;
     display:none;
     background-color: #25335D;
@@ -487,7 +467,7 @@ label {
     #grid-display {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40px auto auto 50px;
+    grid-template-rows: 40px auto auto auto 50px;
    
 }
 
@@ -505,7 +485,7 @@ label {
 
 .texto-menu-mobile {
     
-    padding-right: 140px;
+    padding-left: 50px;
     font-family: Carter one, arial;
     
 
@@ -513,7 +493,7 @@ label {
 
    #header,#footer,#content, #menu, #aside,#empresa,#contato {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end:4 ;
     box-sizing: border-box;
 }
 
@@ -521,12 +501,19 @@ label {
     .externo-itens-content {      
        
         display: grid;        
-        grid-template-columns: 250px;
+        grid-template-columns: 230px;
         justify-content: space-evenly;
         align-content: space-evenly;
     }
 
-    #menu,#aside, #empresa, #header {
+
+
+    #content h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #menu,#aside, #header {
         display: none;
     }
 
@@ -626,6 +613,18 @@ ul.menu-mobile {
 
         } 
 
+       #contato {
+        font-size: 16px;
+        padding-top: 20px;    
+        grid-template-columns: 360px;
+        grid-template-rows: auto;
+        display: block;    
+        text-indent: 0em;    
+        align-content: left;
+        justify-content: start;    
+   
+    
+}
         #contato h2 {
     font-size: 26px; 
 
@@ -634,6 +633,24 @@ ul.menu-mobile {
     #contato img {
         display: none;
     }
+
+       #empresa h2 {
+    font-size: 26px; 
+
+      }
+
+  #empresa {
+    
+    margin-left:10px;
+    margin-right:10px; 
+    padding-top: 20px;
+    column-count: 1;
+    
+    text-indent: 4em;
+    text-align: justify;    
+    font-size: 16px;
+}
+
 
     #footer {
             font-size: 13px;
