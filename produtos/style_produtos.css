@@ -355,6 +355,8 @@ ul.top-menu>li>ul>li {
 
 
 
+
+
 .menu-mobile {
     
     display: flex;
@@ -380,13 +382,37 @@ ul.top-menu>li>ul>li {
 }
 
 
-    .externo-itens-content {      
+    .externo-itens-content {    
+
        
         display: grid;        
         grid-template-columns: 250px;
         justify-content: space-evenly;
         align-content: space-evenly;
     }
+
+   .botoes-produto {
+    
+     text-align: center;     
+   }
+
+    .botoes-produto button {
+
+
+    margin-top: 10px;
+    width: 160px;
+    height: 30px;
+    background-color: green;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+   
+
+
+
+
+}
 
     #menu,#aside, #empresa, #header {
         display: none;
