@@ -113,11 +113,26 @@ a {
 
 }
 
+#content tr {
+    background-color: #f2f2f2;
 
-#content table{
+}
+
+
+
+#content table {
 
     padding: 2px;    
     text-align: center;
+    border-collapse: collapse;
+    border:2px solid green;
+
+}
+
+#content table button {
+    background-color: green;
+    cursor: pointer;
+
 }
 
 #content th {
@@ -168,7 +183,7 @@ a {
     width: 80px;
     height: 30px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 4px;    
     font-weight: bold;
     color: white;
     font-size: 13px;
@@ -219,7 +234,7 @@ a {
     margin-top: 20px;
     text-align: center;
     background-color: green;
-    border: 2px solid black;
+    border: 0px;
    font-weight: bolder; 
   width: 300px;
   height: 50px;  
